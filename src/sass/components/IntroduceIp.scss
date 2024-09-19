@@ -5,6 +5,9 @@
    .intro_ip{
       height: 400vh;
       position: relative;
+      @include media("<phone-medium"){
+        height: 300vh;
+      }
       canvas{
         position: sticky;
         top: 0;

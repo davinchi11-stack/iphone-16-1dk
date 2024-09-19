@@ -24,11 +24,12 @@
         }
 
         p{
-            width: fluid(350, 500);
+            width: fluid(370, 500);
             margin: 0 auto;
             line-height: rem(20);
             font-weight: 500;
             color: #fff;
+            font-size: fluid(18,20);
             span.gray{
                 color: $c_gray;
             }
@@ -37,6 +38,9 @@
     &_img{
        width: 100%;
        height: 400vh;
+       @include media("<phone-medium"){
+        height: 300vh;
+      }
 
        canvas{
         max-height: 100%;

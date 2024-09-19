@@ -16,13 +16,11 @@ export function StickyTwo () {
     gsap.set(".sticky_two_txt h1" , {
       yPercent : 50,
       transformStyle : "preserve-3d",
-      rotateX : 50,
       autoAlpha: 0
   })  
   gsap.to(".sticky_two_txt h1", {
    yPercent : 0,
    autoAlpha: 1,
-   rotateX: 0,
    duration: 0.7,
    scrollTrigger: {
       trigger : ".sticky_two",
