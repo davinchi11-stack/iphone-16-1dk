@@ -1,0 +1,79 @@
+
+.gaming{
+    color: #fff;
+    position: relative;
+    padding-top: rem(80);
+
+    &_main{
+      width: 100%;
+
+      &_img{
+        text-align: center;
+        p{
+            font-size: fluid(11,12);
+            position: relative;
+            top: fluid(26, 30);
+            font-weight: 400;
+            color: $c_gray;
+            display: none;
+        }
+      }
+      &_top{
+        text-align: center;
+        
+        h1{
+            
+            font-weight: 600;
+            font-size: fluid(28,44);
+            color: $filter-color;
+            z-index: 999;
+            text-transform: capitalize;
+        }
+    }
+      &_flex{
+       
+        position: relative;
+        @include flex_col(2.8rem);
+        justify-content: center;
+        align-items: center;
+        
+        
+       
+
+        &_middle{
+            gap: 1.8rem;
+            @include flex(space-between , null, null, null);
+            @include media("<=phone-medium"){
+                flex-direction: column;
+            }
+            
+            
+            p{
+                width: fluid(280, 300);
+                font-size: fluid(19, 19.1);
+                letter-spacing: 1px;
+                color: $c_gray;
+                span.p-white{
+                    color: #fff;
+                }
+                
+            }
+        }
+
+        &_bottom{
+            margin-top: rem(30);
+            h1{
+                font-size: fluid(20,33);
+                text-align: center;
+                width: fluid(250, 400);
+                line-height: fluid(30, 40);
+                color: $c_gray;
+                // padding: 5px 0;
+                span.p-white{
+                    color: #fff;
+                }
+            }
+        }
+      }
+    }
+}

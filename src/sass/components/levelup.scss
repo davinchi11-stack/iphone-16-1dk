@@ -1,0 +1,22 @@
+.level-up{
+    position: relative;
+     padding-top: rem(100);
+    @include flex_col(3rem);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include media("<tablet"){
+        padding-top: rem(90);
+     }
+    
+    &_txt{
+      
+        h1{
+            font-size: fluid(30, 40);
+              font-weight: 600;
+              color: $filter-color;
+              align-items: center;
+             
+        }
+    }
+}

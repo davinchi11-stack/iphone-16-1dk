@@ -1,0 +1,55 @@
+
+.large_ip{
+    width: 100%;
+    padding: rem(120) 0;
+    
+
+  &_txt{
+    width: 100%;
+    font-size: fluid(30, 42);
+    font-weight: 600;
+     @include flex_col(0.5rem);
+     color: $filter-color;
+     align-items: center;
+     text-align: center;
+    }
+
+    &_img{
+        padding: rem(40) 0;
+        picture{
+            width: 100%;
+            img{
+                object-fit: cover;
+                @include media("<tablet"){
+                    height: 600px;
+                }
+            }
+        }
+    }
+
+    &_flex_txt{
+        padding-top: rem(40);
+        @include flex(space-around , null , null, null);
+        gap: rem(30);
+        @include media("<=phone"){
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p{
+            width: fluid(250, 350);
+            font-size: fluid(18.1, 18.6);
+            letter-spacing: 1px;
+            color: $c_gray;
+            span.p-white{
+                color: #fff;
+            }
+            @include media("<phone-medium"){
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+
+
+header{
+    position: relative;
+    background-color: $blacktxt;
+
+
+    nav{
+        @include flex(space-between , center , null , null);
+        color: $header-color;
+        svg{
+            fill: $header-color;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        ul{
+            @include flex(center , center , null , null);
+            gap: 2rem;
+
+            &.ls{
+                padding-bottom: 6px;
+                @include media("<=desktop-small"){
+                    display: none;
+                }
+                li{
+                    font-size: 12px;
+                    font-weight: 200;
+                    cursor: pointer;
+                }
+            }
+
+            &.button{
+                
+                li.hamburger{
+                    display: none;
+                    @include media("<=desktop-small"){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

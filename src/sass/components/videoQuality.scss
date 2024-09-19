@@ -1,0 +1,42 @@
+
+.video_quality{
+    width: 100%;
+    padding-top: rem(40);
+    overflow-x: hidden;
+    @include media("<tablet"){
+        padding-top: rem(80);
+   }      
+    &_main{
+        @include flex_col(2rem);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        &_video{
+            height: fluid(250, 600);
+            video{
+                height: 100%;
+            }
+        }
+
+        &_txt{
+            @include flex(space-around , null , null, null);
+           
+            gap: 2rem;
+                @include media("<phone-medium"){
+                     flex-direction: column;
+                     align-items: center;
+                     justify-content: center;
+                     
+                }      
+            p{
+                width: fluid(250, 350);
+                font-size: fluid(18.6, 19);
+                letter-spacing: 1px;
+                color: $c_gray;
+            span.p-white{
+                color: #fff;
+            }
+            }
+        }
+    }
+}
