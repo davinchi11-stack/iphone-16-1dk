@@ -9,8 +9,8 @@ export function StickyTwo () {
    
    useEffect(() => {
     const canvasScroll = document.querySelector(".canvas_scroll")
-    const canvasScrollCurrentFrame = (index) => `assets/scroll_gp/scroll_${index.toString().padStart(5,"0")}.png`
-    drawImage(canvasScroll , canvasScrollCurrentFrame , 69)
+    const canvasScrollCurrentFrame = (index) => `assets/scrollGp/scrollGp_${index.toString().padStart(4,"0")}.webp`
+    drawImage(canvasScroll , canvasScrollCurrentFrame , 73)
 
 
     gsap.set(".sticky_two_txt h1" , {

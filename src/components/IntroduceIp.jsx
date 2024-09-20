@@ -4,8 +4,8 @@ import {drawImage} from '../animation/drawImage'
 export function IntroduceIp () {
     useEffect(() => {
         const canvasA = document.querySelector(".canvasA") 
-        const currentFrame = (index) => `assets/touch/touch_${index.toString().padStart(5,"0")}.png`;
-        drawImage(canvasA , currentFrame , 56)
+        const currentFrame = (index) => `assets/touch/touch_${index.toString().padStart(4,"0")}.webp`;
+        drawImage(canvasA , currentFrame , 85)
     }, [])
 
     return (

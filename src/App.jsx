@@ -8,17 +8,16 @@ import { Vidquality } from './components/Vidquality'
 import { LevelUp } from './components/LevelUp'
 import { Gaming } from './components/Gaming'
 import { scrollText } from './animation/text'
-import scroll from './animation/scroll'
+
 
 
 function App() {
  useEffect(() => {
-  scrollText()
-  scroll()
+   scrollText()
  })
 
   return (
-    
+      <ReactLenis root>
       <div className="iphone_wrap">
         <Header/>
         <IntroduceIp/>
@@ -28,6 +27,7 @@ function App() {
         <LevelUp/>
         <Gaming/>
       </div>
+      </ReactLenis>
      
   )
 }
