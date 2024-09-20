@@ -49,9 +49,9 @@
             
             
             p{
-                width: fluid(300, 350);
+                width: fluid(298, 300);
                 font-size: fluid(19, 19.1);
-                @include media("<=phone"){
+                @include media("<=phone-medium"){
                     font-size: fluid(20, 20.1);
                 }
                 letter-spacing: 1px;
@@ -72,6 +72,9 @@
                 line-height: fluid(30, 40);
                 color: $c_gray;
                 padding: 20px 0;
+                @include media(">=phone-medium"){
+                    padding: unset;
+                }
                 span.p-white{
                     color: #fff;
                 }
